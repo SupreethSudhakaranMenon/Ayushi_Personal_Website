@@ -45,6 +45,28 @@ const StyledText = styled.div`
       }
     }
   }
+
+  .skills-category {
+    h3 {
+      color: var(--lightest-slate);
+      font-size: var(--fz-lg);
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-family: var(--font-mono);
+    }
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
 `;
 const StyledPic = styled.div`
   position: relative;
@@ -125,8 +147,6 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
-
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
@@ -135,45 +155,87 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+            &quot;Hello! My name is Ayushi, and I&apos;m fascinated by the science of human connection. 
+            My interest in neuroscience began back in 2012 when I first explored how the brain 
+            shapes behavior—turns out, understanding neural circuits taught me a lot about cognition and emotion!&quot;
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Fast-forward to today, and I've had the privilege of working at{' '}
+              <a href="https://www.sgsits.ac.in/">SGSITS</a> as an Assistant Professor,{' '}
+              <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a> as a Teaching Assistant, and currently pursuing my doctoral research at the{' '}
+              <a href="https://csl.iiit.ac.in/">Cognitive Science Lab</a>. My
+              main focus these days is understanding empathy networks and their interaction with societal biases through neuroimaging research.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I'm currently focused on understanding how social biases influence neural responses in empathy networks, using advanced neuroimaging techniques and data analysis methods.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are the technologies and methods I've been working with recently:</p>
           </div>
 
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
+          <div className="skills-grid">
+            <div className="skills-category">
+              <h3>Neuroimaging Tools</h3>
+              <ul className="skills-list">
+                {['fMRI', 'EEG', 'SPM', 'FSL', 'AFNI', 'FreeSurfer'].map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="skills-category">
+              <h3>Programming & Analysis</h3>
+              <ul className="skills-list">
+                {[
+                  'Python',
+                  'MATLAB',
+                  'R Programming',
+                  'Statistical Analysis',
+                  'Machine Learning',
+                  'Neural Networks'
+                ].map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="skills-category">
+              <h3>Cognitive Science</h3>
+              <ul className="skills-list">
+                {[
+                  'ACT-R',
+                  'SOAR',
+                  'Cognitive Modeling',
+                  'Behavioral Analysis'
+                ].map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="skills-category">
+              <h3>Research Tools</h3>
+              <ul className="skills-list">
+                {[
+                  'PsychoPy',
+                  'E-Prime',
+                  'Experimental Design',
+                  'Research Methods'
+                ].map((skill, i) => (
+                  <li key={i}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </StyledText>
 
         <StyledPic>
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/ayushi_me.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

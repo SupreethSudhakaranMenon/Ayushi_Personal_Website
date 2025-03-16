@@ -44,6 +44,32 @@ const StyledHeroSection = styled.section`
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
   }
+
+  .objective {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    strong {
+      color: var(--lightest-slate);
+      display: block;
+      margin-bottom: 15px;
+      font-size: var(--fz-xl);
+    }
+
+    .objective-text {
+      margin-top: 20px;
+      font-style: italic;
+      color: var(--light-slate);
+      font-family: var(--font-sans);
+      font-weight: 500;
+      line-height: 1.5;
+      max-width: 800px;
+      text-align: justify;
+    }
+  }
 `;
 
 const Hero = () => {
@@ -60,29 +86,25 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Ayushi Agrawal.</h2>;
+  const three = <h3 className="big-heading">I decode the social brain.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+      I'm a social neuroscience researcher exploring the brain and behavior to understand human connection. Currently, I focus on studying the neural foundations of social interactions.
+       {' '}
+        <a href="https://sites.google.com/view/perception-engineering-group" target="_blank" rel="noreferrer">
+          PEG, IIIT-H
         </a>
         .
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
-    </a>
+    <div className="objective">
+      {/* <strong>Objective:</strong> */}
+      {/* <span className="objective-text">"Passionate Social Neuroscience researcher dedicated to unraveling empathy networks shaped by societal biases and stereotypes. Leveraging interdisciplinary skills in neuroimaging, cognitive neuroscience, and social sciences to uncover new insights into social behavior’s neural mechanisms. Collaborative research enthusiast committed to continual learning and skill development to drive positive societal change and organizational success through innovative research endeavors."</span> */}
+    </div>
   );
 
   const items = [one, two, three, four, five];
