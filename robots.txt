@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ayushiagrawal.com/Ayushi_Personal_Website/sitemap-index.xml
+Host: https://ayushiagrawal.com
