@@ -31,7 +31,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -76,14 +77,16 @@
     "@babel/eslint-parser": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "@upstatement/eslint-config": "^1.0.1",
-    "@upstatement/prettier-config": "^1.1.0",
+    "@upstatement/prettier-config": "^1.0.0",
+    "babel-eslint": "^10.1.0",
     "babel-preset-gatsby": "^2.25.0",
-    "eslint": "^8.55.0",
+    "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.10.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.2",
     "gatsby-plugin-root-import": "^2.0.9",
     "gatsby-remark-code-titles": "^1.1.0",
+    "gh-pages": "^6.3.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
     "prettier": "^2.8.8"
