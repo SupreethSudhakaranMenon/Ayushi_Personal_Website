@@ -1,12 +1,12 @@
 const config = require('./src/config');
 
 module.exports = {
-  pathPrefix: '/Ayushi_Personal_Website',
+  pathPrefix: '/',
   siteMetadata: {
     title: 'Ayushi Agrawal',
     description:
       'Ayushi Agrawal is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://supreethsudhakaranmenon.github.io/Ayushi_Personal_Website',
+    siteUrl: 'https://ayushiagrawal.com',
     image: '/og.png',
     twitterUsername: '@ayushiagrawal',
   },
