@@ -1,13 +1,14 @@
 const config = require('./src/config');
 
 module.exports = {
+  pathPrefix: '/Ayushi_Personal_Website',
   siteMetadata: {
     title: 'Ayushi Agrawal',
     description:
       'Ayushi Agrawal is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
     siteUrl: 'https://ayushiagrawal.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@ayushiagrawal',  // Need to modify this
+    twitterUsername: '@ayushiagrawal', // Need to modify this
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Ayushi Agrawal',
+        short_name: 'Ayushi Agrawal',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

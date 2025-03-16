@@ -6,14 +6,6 @@ module.exports = {
       name: 'GitHub',
       // url: 'https://github.com/bchiang7',
     },
-    // {
-    //   name: 'Instagram',
-    //   url: 'https://www.instagram.com/bchiang7',
-    // },
-    // {
-    //   name: 'Twitter',
-    //   url: 'https://twitter.com/bchiang7',
-    // },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/ayushi-agrawal-a3547960/',
