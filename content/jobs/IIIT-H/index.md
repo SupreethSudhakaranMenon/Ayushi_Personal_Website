@@ -1,7 +1,7 @@
 ---
 date: '2025-03-16'
-title: 'Doctoral Researcher' 
-company: 'Cognitive Science Lab'
+title: 'Doctoral Researcher'
+company: 'CSL'
 location: 'Hyderabad, India'
 range: 'April 2020 - Present'
 url: 'https://csl.iiit.ac.in'
