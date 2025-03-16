@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ayushiagrawal.com/Ayushi_Personal_Website/sitemap-index.xml
-Host: https://ayushiagrawal.com
+Sitemap: https://supreethsudhakaranmenon.github.io/Ayushi_Personal_Website/sitemap-index.xml
+Host: https://supreethsudhakaranmenon.github.io
