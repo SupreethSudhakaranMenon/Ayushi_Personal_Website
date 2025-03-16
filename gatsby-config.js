@@ -1,14 +1,13 @@
 const config = require('./src/config');
 
 module.exports = {
-  pathPrefix: '/',
   siteMetadata: {
     title: 'Ayushi Agrawal',
     description:
       'Ayushi Agrawal is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://ayushiagrawal.com',
-    image: '/og.png',
-    twitterUsername: '@ayushiagrawal',
+    siteUrl: 'https://ayushiagrawal.com', // No trailing slash allowed!
+    image: '/og.png', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@ayushiagrawal', // Need to modify this
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

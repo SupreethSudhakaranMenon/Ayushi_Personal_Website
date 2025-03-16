@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-ayushi",
-  "description": "Personal Website - Ayushi Agrawal",
+  "name": "v4",
+  "description": "Personal Website V4",
   "version": "1.0.0",
-  "author": "Ayushi Agrawal",
+  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/bchiang7/v4"
@@ -31,8 +31,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged",
-    "deploy": "gatsby clean && gatsby build && gh-pages -d public"
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -85,7 +84,6 @@
     "eslint-plugin-react": "^7.33.2",
     "gatsby-plugin-root-import": "^2.0.9",
     "gatsby-remark-code-titles": "^1.1.0",
-    "gh-pages": "^6.3.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
     "prettier": "^2.8.8"
